@@ -10,6 +10,8 @@ namespace CBoard
     {
         public double price { get; private set; }
         public string name { get; private set; }
+
+        public double taxPercentage { get; private set; }
         private string imgPath;
 
         public Item (string name, double price)
@@ -21,6 +23,10 @@ namespace CBoard
         public void addImg(string imgPath)
         {
             this.imgPath = imgPath;
+
+            
         }
+
+        
     }
 }
